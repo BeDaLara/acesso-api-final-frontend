@@ -1,4 +1,4 @@
-# acesso-api-final
+# acesso-ia-final
 
 ## Project setup
 ```
