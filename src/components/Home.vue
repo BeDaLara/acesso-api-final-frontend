@@ -4,7 +4,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="@/assets/logo.png" alt="" class="logo"> Sistema Ia
+                <img src="@/assets/logo.png" alt="" class="logo"> Sistema I.A
             </a>
         
         <!--Menu Usuário-->
