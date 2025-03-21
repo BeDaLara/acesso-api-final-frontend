@@ -67,7 +67,7 @@ data() {
       email: "",
       cpf: "",
       status: "ativo",
-      foto: ""
+      foto_perfil: ""
     },
     dropzoneInstance: null,
     previewImagem: null
@@ -92,13 +92,13 @@ methods: {
             // console.log(file);
             self.converterImagemBase64(file).then((base64) => {
               self.previewImagem = base64;
-              self.usuario.foto = base64.split(",")[1];
+              self.usuario.foto_perfil = base64.split(",")[1];
             })
             .catch((error) => console.error("Erro ao converter para base64:", error))
           });
           this.on("removedfile", function(){
             self.previewImagem = null;
-            self.usuario.foto = null;
+            self.usuario.foto_perfil = null;
           });
         }
       });
