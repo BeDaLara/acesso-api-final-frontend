@@ -5,6 +5,10 @@ import Home from '@/components/Home.vue';
 import Usuarios from '@/components/Usuarios.vue';
 import CadastrarUsuarios from '@/components/CadastrarUsuarios.vue';
 import EditarUsuario from '@/components/EditarUsuarios.vue';
+import ListarAcessos from './components/ListarAcessos.vue';
+import RegistrarAcesso from './components/RegistrarAcesso.vue';
+import CompararImagens from './components/CompararImagens.vue';
+import RecuperarSenha from './components/RecuperarSenha.vue';
 
 Vue.use(Router);
 
@@ -12,6 +16,7 @@ const router =  new Router({
     mode: "history",
     routes: [
         { path: "/login", component: Login },
+        { path: "/recuperar-senha", component: RecuperarSenha },
         { 
             path: "/home", 
             component: Home,
@@ -19,6 +24,9 @@ const router =  new Router({
                 { path: "usuarios", component: Usuarios },
                 { path: "usuarios/cadastrar", component: CadastrarUsuarios },
                 { path: "usuarios/editar/:id", component: EditarUsuario },
+                { path: "acessos/listar", component: ListarAcessos },
+                { path: "acessos/registrar", component: RegistrarAcesso },
+                { path: "comparar-imagens", component: CompararImagens },
             ],
             meta: { requiresAuth: true}
         },
